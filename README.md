@@ -1,5 +1,8 @@
 # Sudoku Solver
 
+[![Build Status](https://img.shields.io/travis/JonasJurczok/sudokusolver.svg)](https://travis-ci.org/JonasJurczok/sudokusolver)
+[![Coverage Status](https://img.shields.io/coveralls/JonasJurczok/sudokusolver.svg)](https://coveralls.io/r/JonasJurczok/sudokusolver)
+
 This program is intended as a coding practice.. also I always wanted to test random Sudoku solving strategies.
 
 ## Current state
