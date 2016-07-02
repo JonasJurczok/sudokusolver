@@ -12,7 +12,7 @@ import java.net.URL;
 public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        URL resource = getClass().getResource("Main.fxml");
+        URL resource = getClass().getResource("main.fxml");
         Parent parent = FXMLLoader.<Parent>load(resource);
 
         primaryStage.setTitle("Sudoku Solver");
