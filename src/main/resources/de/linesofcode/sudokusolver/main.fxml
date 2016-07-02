@@ -14,9 +14,18 @@
         <URL value="@BorderedTitledPane.css"/>
     </stylesheets>
     <children>
-        <BorderedTitledPane title="Sudoku">
+        <BorderedTitledPane title="Sudoku" id="mainPanel">
             <content>
-                <Label text="Content"/>
+                <HBox>
+                    <GridPane id="gamePane" HBox.hgrow="SOMETIMES">
+                        <Label text="game pane"/>
+                    </GridPane>
+                    <BorderedTitledPane title="Controls" id="controlPanel">
+                        <content>
+                            <Label text="control panel"/>
+                        </content>
+                    </BorderedTitledPane>
+                </HBox>
             </content>
         </BorderedTitledPane>
         <!--<GridPane hgap="15.0" minHeight="-Infinity" vgap="15.0">

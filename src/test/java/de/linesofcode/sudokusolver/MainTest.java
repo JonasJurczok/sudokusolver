@@ -39,4 +39,15 @@ public class MainTest {
     public void mainPanelShouldBeVisibile() {
         verifyThat("#mainPanel", isVisible());
     }
+
+    @Test
+    public void gamePaneShouldBeVisible() {
+        verifyThat("#gamePane", isVisible());
+    }
+
+    @Test
+    public void controlPanelShouldBeVisible() {
+        verifyThat("#controlPanel", isVisible());
+    }
+
 }
