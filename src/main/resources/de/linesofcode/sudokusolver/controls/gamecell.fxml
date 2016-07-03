@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.StackPane?>
+<?import java.net.URL?>
+<fx:root type="javafx.scene.layout.StackPane" id="mainPane" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+    <stylesheets>
+        <URL value="@gamecell.css"/>
+    </stylesheets>
+    <Label fx:id="label" styleClass="cell"/>
+    <TextField fx:id="edit" visible="false"/>
+</fx:root>

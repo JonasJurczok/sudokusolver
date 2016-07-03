@@ -1,0 +1,8 @@
+.cell {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-alignment: center;
+}
