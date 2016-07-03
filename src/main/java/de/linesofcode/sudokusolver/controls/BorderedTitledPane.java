@@ -2,36 +2,38 @@ package de.linesofcode.sudokusolver.controls;
 
 import javafx.beans.DefaultProperty;
 import javafx.beans.NamedArg;
+import javafx.beans.property.ObjectProperty;
+import javafx.beans.property.SimpleObjectProperty;
 import javafx.collections.ObservableList;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Label;
 import javafx.scene.layout.StackPane;
 
+import java.io.IOException;
+import java.net.URL;
 import java.util.List;
 
-@DefaultProperty("Content")
+@DefaultProperty("content")
 public class BorderedTitledPane extends StackPane {
 
-    private final Label title;
-    private final StackPane contentPane;
+    @FXML
+    private Label title;
+    @FXML
+    private StackPane contentPane;
 
-    public BorderedTitledPane(@NamedArg("title") String titleString, @NamedArg("content") Node content) {
-        title = new Label(" " + titleString + " ");
-        title.getStyleClass().add("bordered-titled-title");
-        StackPane.setAlignment(title, Pos.TOP_LEFT);
-
-        contentPane = new StackPane();
-        content.getStyleClass().add("bordered-titled-content");
-        contentPane.getChildren().add(content);
-
-        getStyleClass().add("bordered-titled-border");
-        getChildren().addAll(title, contentPane);
-    }
-
-    public void setContent(List<Node> content) {
-        contentPane.getChildren().clear();
-        contentPane.getChildren().addAll(content);
+    public BorderedTitledPane() {
+        URL resource = getClass().getResource("BorderedTitledPane.fxml");
+        FXMLLoader fxmlLoader = new FXMLLoader(resource);
+        fxmlLoader.setRoot(this);
+        fxmlLoader.setController(this);
+        try {
+            fxmlLoader.load();
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public ObservableList<Node> getContent() {
@@ -39,8 +41,10 @@ public class BorderedTitledPane extends StackPane {
     }
 
     public void setTitle(String title) {
-        this.title.setText(title);
+        this.title.setText(" " + title + " ");
     }
 
-
+    public String getTitle() {
+        return title.getText();
+    }
 }

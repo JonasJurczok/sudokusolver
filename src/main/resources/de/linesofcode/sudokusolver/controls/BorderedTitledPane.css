@@ -6,6 +6,7 @@
     -fx-background-color: white;
     -fx-translate-y: -16;
     -fx-translate-x: 20;
+    -fx-alignment: top-left;
 }
 
 .bordered-titled-border {
@@ -14,6 +15,8 @@
     -fx-background-color: white;
     -fx-border-color: black;
     -fx-border-width: 2;
+    -fx-alignment: top-left;
+
 }
 
 .bordered-titled-content {

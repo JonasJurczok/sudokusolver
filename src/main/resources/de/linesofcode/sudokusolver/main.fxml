@@ -7,15 +7,10 @@
 <?import javafx.scene.layout.*?>
 <?import java.net.URL?>
 <StackPane prefWidth="400.0" xmlns="http://javafx.com/javafx/8">
-    <!-- TODO: ultra hack. This should be part of the component itself -->
-    <stylesheets>
-        <URL value="@BorderedTitledPane.css"/>
-    </stylesheets>
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>
     <BorderedTitledPane title="Sudoku" id="mainPanel">
-        <content>
             <HBox>
                 <GridPane id="gamePane" HBox.hgrow="SOMETIMES" maxWidth="360">
                     <GameCell GridPane.columnIndex="0" GridPane.rowIndex="0" value="1"/>
@@ -110,11 +105,8 @@
 
                 </GridPane>
                 <BorderedTitledPane title="Controls" id="controlPanel">
-                    <content>
                         <Label text="control panel"/>
-                    </content>
                 </BorderedTitledPane>
             </HBox>
-        </content>
     </BorderedTitledPane>
 </StackPane>
