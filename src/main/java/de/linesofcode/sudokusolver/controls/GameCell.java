@@ -16,7 +16,7 @@ public class GameCell extends StackPane {
     @FXML private TextField edit;
 
     public GameCell() {
-        URL resource = getClass().getResource("gamecell.fxml");
+        URL resource = getClass().getResource("GameCell.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
         fxmlLoader.setRoot(this);
         fxmlLoader.setController(this);
@@ -27,12 +27,8 @@ public class GameCell extends StackPane {
         }
     }
 
-    private void doSetValue(Integer value) {
-        label.setText(value == null ? "0" : value.toString());
-    }
-
     public void setValue(Integer value) {
-        doSetValue(value);
+        label.setText(value == null ? "0" : value.toString());
     }
 
     public Integer getValue() {

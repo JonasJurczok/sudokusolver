@@ -9,8 +9,6 @@
     <stylesheets>
         <URL value="@GameCell.css"/>
     </stylesheets>
-    <children>
-        <Label fx:id="label" styleClass="cell"/>
-        <TextField fx:id="edit" visible="false"/>
-    </children>
+    <Label fx:id="label" styleClass="cell"/>
+    <TextField fx:id="edit" visible="false"/>
 </fx:root>

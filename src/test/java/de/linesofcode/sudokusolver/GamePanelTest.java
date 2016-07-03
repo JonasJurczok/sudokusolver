@@ -57,7 +57,7 @@ public class GamePanelTest extends ApplicationTest {
 
         GameCell cell = (GameCell) node;
 
-        assertThat(cell.getStylesheets(), contains(containsString("gamecell.css")));
+        assertThat(cell.getStylesheets(), contains(containsString("GameCell.css")));
     }
 
     @Test
