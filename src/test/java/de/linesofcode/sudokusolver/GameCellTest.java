@@ -40,8 +40,8 @@ public class GameCellTest extends ApplicationTest {
             Node numberPane = fx.lookup("#numberPane").queryFirst();
             Bounds numberPaneBounds = numberPane.localToScreen(numberPane.getBoundsInLocal());
 
-            assertThat(message, numberPaneBounds.getMinX(), is(both(greaterThan(cellBounds.getMinX() - 4)).and(lessThan(cellBounds.getMinX() + 4))));
-            assertThat(message, numberPaneBounds.getMinY(), is(both(greaterThan(cellBounds.getMinY() - 4)).and(lessThan(cellBounds.getMinX() + 4))));
+            assertThat(message, numberPaneBounds.getMinX(), is(cellBounds.getMinX()));
+            assertThat(message, numberPaneBounds.getMinY(), is(both(greaterThan(cellBounds.getMaxY() - 4)).and(lessThan(cellBounds.getMaxY() + 4))));
 
             // click outside of the number pane
             fx.clickOn(gamePanelBounds.getMinX(), gamePanelBounds.getMinY(), PRIMARY);
