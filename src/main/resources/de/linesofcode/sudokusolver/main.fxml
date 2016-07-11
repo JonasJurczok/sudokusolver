@@ -5,8 +5,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.*?>
-<?import java.net.URL?>
-<StackPane prefWidth="400.0" xmlns="http://javafx.com/javafx/8">
+<StackPane prefWidth="750.0" xmlns="http://javafx.com/javafx/8">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
     </padding>

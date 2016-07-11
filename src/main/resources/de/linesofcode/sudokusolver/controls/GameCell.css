@@ -1,8 +1,13 @@
-.cell {
+.cellLabel {
     -fx-background-color: white;
     -fx-border-color: black;
     -fx-border-width: 2px;
     -fx-min-width: 40px;
     -fx-min-height: 40px;
     -fx-alignment: center;
+}
+
+.cell {
+    -fx-max-width: 50;
+    -fx-max-height: 50;
 }

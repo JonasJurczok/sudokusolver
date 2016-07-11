@@ -4,7 +4,6 @@ import de.linesofcode.sudokusolver.controls.GameCell;
 import javafx.collections.ObservableList;
 import javafx.scene.Node;
 import javafx.scene.layout.GridPane;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import static org.hamcrest.CoreMatchers.containsString;

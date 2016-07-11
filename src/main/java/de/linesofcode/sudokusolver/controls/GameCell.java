@@ -1,19 +1,18 @@
 package de.linesofcode.sudokusolver.controls;
 
-import javafx.beans.NamedArg;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
+import javafx.geometry.Bounds;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import javafx.scene.layout.StackPane;
+import javafx.stage.Popup;
 
 import java.io.IOException;
 import java.net.URL;
 
 public class GameCell extends StackPane {
 
-    @FXML Label label;
-    @FXML private TextField edit;
+    @FXML private Label label;
 
     public GameCell() {
         URL resource = getClass().getResource("GameCell.fxml");
@@ -25,6 +24,18 @@ public class GameCell extends StackPane {
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        setOnMouseClicked(mouseEvent -> {
+            Bounds bounds = localToScreen(getBoundsInLocal());
+            Popup popup = new Popup();
+            popup.setX(bounds.getMinX());
+            popup.setY(bounds.getMaxY());
+            Label label = new Label("Test");
+            label.setId("numberPane");
+            popup.getContent().addAll(label);
+            popup.setAutoHide(true);
+            popup.show(getScene().getWindow());
+        });
     }
 
     public void setValue(Integer value) {
