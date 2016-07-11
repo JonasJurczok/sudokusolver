@@ -20,6 +20,7 @@ public class ApplicationTest {
         primaryStage = registerPrimaryStage();
         setupStage(Stage::show);
     }
+
     @Before
     public void setup() throws TimeoutException {
         FxToolkit.setupApplication(Main.class);

@@ -3,8 +3,6 @@ package de.linesofcode.sudokusolver;
 import javafx.geometry.Bounds;
 import javafx.scene.Node;
 import javafx.scene.layout.GridPane;
-import org.hamcrest.CoreMatchers;
-import org.hamcrest.Matchers;
 import org.junit.Test;
 
 import java.util.Set;
