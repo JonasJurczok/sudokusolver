@@ -30,9 +30,7 @@ public class GameCell extends StackPane {
             Popup popup = new Popup();
             popup.setX(bounds.getMinX());
             popup.setY(bounds.getMaxY());
-            Label label = new Label("Test");
-            label.setId("numberPane");
-            popup.getContent().addAll(label);
+            popup.getContent().addAll(new NumberPane());
             popup.setAutoHide(true);
             popup.show(getScene().getWindow());
         });

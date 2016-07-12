@@ -1,0 +1,19 @@
+.numberPaneCell {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+    -fx-min-width: 40px;
+    -fx-min-height: 40px;
+    -fx-alignment: center;
+    -fx-max-width: 70;
+    -fx-max-height: 70;
+    -fx-font-weight: bold;
+    -fx-font-size: 25px;
+}
+
+.numberPane {
+    -fx-border-color: black;
+    -fx-background-color: lightgrey;
+    -fx-border-width: 2px;
+    -fx-padding: 10px;
+}

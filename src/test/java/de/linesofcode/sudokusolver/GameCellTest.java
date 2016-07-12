@@ -1,5 +1,6 @@
 package de.linesofcode.sudokusolver;
 
+import de.linesofcode.sudokusolver.controls.NumberPane;
 import javafx.geometry.Bounds;
 import javafx.scene.Node;
 import javafx.scene.layout.GridPane;
@@ -9,6 +10,7 @@ import java.util.Set;
 
 import static javafx.scene.input.MouseButton.PRIMARY;
 import static org.hamcrest.CoreMatchers.both;
+import static org.hamcrest.CoreMatchers.instanceOf;
 import static org.hamcrest.Matchers.greaterThan;
 import static org.hamcrest.Matchers.lessThan;
 import static org.hamcrest.core.Is.is;
@@ -45,5 +47,16 @@ public class GameCellTest extends ApplicationTest {
             fx.clickOn(gamePanelBounds.getMinX(), gamePanelBounds.getMinY(), PRIMARY);
             assertThat(message, fx.lookup("#numberPane").queryAll().size(), is(0));
         });
+    }
+
+    @Test
+    public void numberPaneShouldBeOfCorrectClass() {
+        GridPane gamePane = fx.lookup("#gamePane").queryFirst();
+        Node cell = gamePane.getChildren().get(0);
+        fx.clickOn(cell);
+
+        Node node = fx.lookup("#numberPane").queryFirst();
+
+        assertThat(node, is(instanceOf(NumberPane.class)));
     }
 }
