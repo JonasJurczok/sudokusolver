@@ -10,16 +10,16 @@
         <URL value="@NumberPane.css"/>
     </stylesheets>
     <children>
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="1" styleClass="numberPaneCell"/>
-        <Label GridPane.columnIndex="1" GridPane.rowIndex="0" text="2" styleClass="numberPaneCell"/>
-        <Label GridPane.columnIndex="2" GridPane.rowIndex="0" text="3" styleClass="numberPaneCell"/>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="0" text="1" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
+        <Label GridPane.columnIndex="1" GridPane.rowIndex="0" text="2" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
+        <Label GridPane.columnIndex="2" GridPane.rowIndex="0" text="3" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
 
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="4" styleClass="numberPaneCell"/>
-        <Label GridPane.columnIndex="1" GridPane.rowIndex="1" text="5" styleClass="numberPaneCell"/>
-        <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="6" styleClass="numberPaneCell"/>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="1" text="4" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
+        <Label GridPane.columnIndex="1" GridPane.rowIndex="1" text="5" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
+        <Label GridPane.columnIndex="2" GridPane.rowIndex="1" text="6" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
 
-        <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="7" styleClass="numberPaneCell"/>
-        <Label GridPane.columnIndex="1" GridPane.rowIndex="2" text="8" styleClass="numberPaneCell"/>
-        <Label GridPane.columnIndex="2" GridPane.rowIndex="2" text="9" styleClass="numberPaneCell"/>
+        <Label GridPane.columnIndex="0" GridPane.rowIndex="2" text="7" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
+        <Label GridPane.columnIndex="1" GridPane.rowIndex="2" text="8" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
+        <Label GridPane.columnIndex="2" GridPane.rowIndex="2" text="9" styleClass="numberPaneCell" onMouseClicked="#onClick"/>
     </children>
 </fx:root>

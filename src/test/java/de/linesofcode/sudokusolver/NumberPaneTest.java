@@ -10,6 +10,7 @@ import org.junit.Test;
 import java.util.List;
 
 import static org.hamcrest.CoreMatchers.hasItem;
+import static org.hamcrest.collection.IsEmptyCollection.empty;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertThat;
 
@@ -56,4 +57,21 @@ public class NumberPaneTest extends ApplicationTest {
         GridPane numberPane = fx.lookup("#numberPane").queryFirst();
         assertThat(numberPane.getStyleClass(), hasItem("numberPane"));
     }
+
+    @Test
+    public void clickingANumberShouldCloseNumberPane() {
+        GridPane gamePane = fx.lookup("#gamePane").queryFirst();
+        Node cell = gamePane.getChildren().get(0);
+
+        for (int i= 0; i < 9; i++) {
+            fx.clickOn(cell);
+
+            GridPane numberPane = fx.lookup("#numberPane").queryFirst();
+            Node numberPaneCell = numberPane.getChildren().get(i);
+            fx.clickOn(numberPaneCell);
+
+            assertThat(fx.lookup("#numberPane").queryAll(), is(empty()));
+        }
+    }
+
 }
