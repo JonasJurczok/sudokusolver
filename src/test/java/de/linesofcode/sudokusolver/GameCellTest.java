@@ -22,11 +22,8 @@ import static org.junit.Assert.assertThat;
 public class GameCellTest extends ApplicationTest {
 
     @Test
-    // TODO: seriously? This should be like.. 4 tests..
-    public void clickOnCellShouldMakeNumberPaneVisibleInTheCorrectPositionAndNumberPaneShouldClose() {
+    public void clickOnCellShouldMakeNumberPaneVisibleInTheCorrectPosition() {
         GridPane gamePane = fx.lookup("#gamePane").queryFirst();
-
-        Bounds gamePanelBounds = gamePane.localToScreen(gamePane.getBoundsInLocal());
 
         gamePane.getChildren().stream().forEach(cell -> {
             Integer columnIndex = GridPane.getColumnIndex(cell);
@@ -46,11 +43,24 @@ public class GameCellTest extends ApplicationTest {
 
             assertThat(message, numberPaneBounds.getMinX(), is(cellBounds.getMinX()));
             assertThat(message, numberPaneBounds.getMinY(), is(both(greaterThan(cellBounds.getMaxY() - 4)).and(lessThan(cellBounds.getMaxY() + 4))));
-
-            // click outside of the number pane
-            fx.clickOn(gamePanelBounds.getMinX(), gamePanelBounds.getMinY(), PRIMARY);
-            assertThat(message, fx.lookup("#numberPane").queryAll().size(), is(0));
         });
+    }
+
+    @Test
+    public void clickOutsideOfNumberPaneShouldCloseIt() {
+        GridPane gamePane = fx.lookup("#gamePane").queryFirst();
+
+        Bounds gamePanelBounds = gamePane.localToScreen(gamePane.getBoundsInLocal());
+
+        Node cell = gamePane.getChildren().get(0);
+        fx.clickOn(cell);
+
+        Node numberPane = fx.lookup("#numberPane").queryFirst();
+        assertThat(numberPane.isVisible(), is(true));
+
+        // click outside of the number pane
+        fx.clickOn(gamePanelBounds.getMinX(), gamePanelBounds.getMinY(), PRIMARY);
+        assertThat(fx.lookup("#numberPane").queryAll().size(), is(0));
     }
 
     @Test
