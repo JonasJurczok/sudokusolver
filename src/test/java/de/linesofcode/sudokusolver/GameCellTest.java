@@ -1,13 +1,16 @@
 package de.linesofcode.sudokusolver;
 
+import de.linesofcode.sudokusolver.controls.GameCell;
 import de.linesofcode.sudokusolver.controls.NumberPane;
 import javafx.geometry.Bounds;
 import javafx.scene.Node;
+import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
 import org.junit.Test;
 
 import java.util.Set;
 
+import static java.lang.Integer.valueOf;
 import static javafx.scene.input.MouseButton.PRIMARY;
 import static org.hamcrest.CoreMatchers.both;
 import static org.hamcrest.CoreMatchers.instanceOf;
@@ -59,4 +62,21 @@ public class GameCellTest extends ApplicationTest {
 
         assertThat(node, is(instanceOf(NumberPane.class)));
     }
+
+    @Test
+    public void clickNumberPaneShouldSetCellValue() {
+        GridPane gamePane = fx.lookup("#gamePane").queryFirst();
+        GameCell cell = (GameCell) gamePane.getChildren().get(0);
+
+        for (int i= 0; i < 9; i++) {
+            fx.clickOn(cell);
+
+            GridPane numberPane = fx.lookup("#numberPane").queryFirst();
+            Label numberPaneCell = (Label) numberPane.getChildren().get(i);
+            fx.clickOn(numberPaneCell);
+
+            assertThat(cell.getValue(), is(valueOf(numberPaneCell.getText())));
+        }
+    }
+
 }

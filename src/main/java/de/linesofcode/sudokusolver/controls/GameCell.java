@@ -30,14 +30,14 @@ public class GameCell extends StackPane {
             Popup popup = new Popup();
             popup.setX(bounds.getMinX());
             popup.setY(bounds.getMaxY());
-            popup.getContent().addAll(new NumberPane(popup));
+            popup.getContent().addAll(new NumberPane(popup, this));
             popup.setAutoHide(true);
             popup.show(getScene().getWindow());
         });
     }
 
     public void setValue(Integer value) {
-        label.setText(value == null ? "0" : value.toString());
+        label.setText(value == null || value == 0 ? "" : value.toString());
     }
 
     public Integer getValue() {

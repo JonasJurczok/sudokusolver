@@ -2,7 +2,7 @@ package de.linesofcode.sudokusolver.controls;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Node;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.GridPane;
 import javafx.stage.Popup;
@@ -10,11 +10,16 @@ import javafx.stage.Popup;
 import java.io.IOException;
 import java.net.URL;
 
+import static java.lang.Integer.valueOf;
+
 public class NumberPane extends GridPane {
     private Popup popup;
+    private GameCell gameCell;
 
-    public NumberPane(Popup popup) {
+    public NumberPane(Popup popup, GameCell gameCell) {
         this.popup = popup;
+        this.gameCell = gameCell;
+
         URL resource = getClass().getResource("NumberPane.fxml");
         FXMLLoader fxmlLoader = new FXMLLoader(resource);
         fxmlLoader.setRoot(this);
@@ -28,8 +33,9 @@ public class NumberPane extends GridPane {
 
     @FXML
     public void onClick(MouseEvent event) {
-        System.out.println("click");
-        Node source = (Node) event.getSource();
+        Label source = (Label) event.getSource();
+        Integer value = valueOf(source.getText());
+        gameCell.setValue(value);
         popup.hide();
     }
 }
