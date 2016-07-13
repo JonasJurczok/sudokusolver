@@ -22,7 +22,8 @@ import static org.junit.Assert.assertThat;
 public class GameCellTest extends ApplicationTest {
 
     @Test
-    public void clickOnCellShouldMakeNumberPaneVisible() {
+    // TODO: seriously? This should be like.. 4 tests..
+    public void clickOnCellShouldMakeNumberPaneVisibleInTheCorrectPositionAndNumberPaneShouldClose() {
         GridPane gamePane = fx.lookup("#gamePane").queryFirst();
 
         Bounds gamePanelBounds = gamePane.localToScreen(gamePane.getBoundsInLocal());
