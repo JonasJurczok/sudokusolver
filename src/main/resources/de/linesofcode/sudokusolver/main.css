@@ -1,0 +1,14 @@
+.borderRight {
+    -fx-border-width: 0 2px 0 0;
+    -fx-border-color: black;
+}
+
+.borderBottom {
+    -fx-border-width: 0 0 2px 0;
+    -fx-border-color: black;
+}
+
+.borderBottomRight {
+    -fx-border-width: 0 2px 2px 0;
+    -fx-border-color: black;
+}

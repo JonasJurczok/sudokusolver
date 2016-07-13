@@ -5,6 +5,7 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.layout.*?>
+<?import java.net.URL?>
 <StackPane prefWidth="750.0" xmlns="http://javafx.com/javafx/8">
     <padding>
         <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
@@ -12,95 +13,95 @@
     <BorderedTitledPane title="Sudoku" id="mainPanel">
             <HBox>
                 <GridPane id="gamePane" HBox.hgrow="SOMETIMES" maxWidth="360">
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="0" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="0" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="0" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="0" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="0" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="0" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="0" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="0" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="0" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="0" value="0"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="0" value="0"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="0" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="0" value="0"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="0" value="0"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="0" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="0" value="0"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="0" value="0"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="0" value="0"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="1" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="1" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="1" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="1" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="1" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="1" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="1" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="1" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="1" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="1" value="0"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="1" value="0"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="1" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="1" value="0"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="1" value="0"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="1" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="1" value="0"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="1" value="0"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="1" value="0"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="2" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="2" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="2" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="2" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="2" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="2" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="2" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="2" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="2" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="2" value="0" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="2" value="0" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="2" value="0" styleClass="borderBottomRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="2" value="0" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="2" value="0" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="2" value="0" styleClass="borderBottomRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="2" value="0" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="2" value="0" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="2" value="0" styleClass="borderBottom"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="3" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="3" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="3" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="3" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="3" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="3" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="3" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="3" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="3" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="3" value="0"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="3" value="0"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="3" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="3" value="0"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="3" value="0"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="3" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="3" value="0"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="3" value="0"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="3" value="0"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="4" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="4" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="4" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="4" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="4" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="4" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="4" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="4" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="4" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="4" value="0"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="4" value="0"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="4" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="4" value="0"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="4" value="0"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="4" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="4" value="0"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="4" value="0"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="4" value="0"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="5" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="5" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="5" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="5" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="5" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="5" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="5" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="5" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="5" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="5" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="5" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="5" styleClass="borderBottomRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="5" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="5" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="5" styleClass="borderBottomRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="5" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="5" styleClass="borderBottom"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="5" styleClass="borderBottom"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="6" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="6" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="6" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="6" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="6" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="6" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="6" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="6" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="6" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="6" value="0"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="6" value="0"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="6" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="6" value="0"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="6" value="0"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="6" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="6" value="0"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="6" value="0"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="6" value="0"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="7" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="7" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="7" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="7" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="7" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="7" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="7" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="7" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="7" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="7" value="0"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="7" value="0"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="7" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="7" value="0"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="7" value="0"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="7" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="7" value="0"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="7" value="0"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="7" value="0"/>
 
-                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="8" value="1"/>
-                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="8" value="2"/>
-                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="8" value="3"/>
-                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="8" value="4"/>
-                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="8" value="5"/>
-                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="8" value="6"/>
-                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="8" value="7"/>
-                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="8" value="8"/>
-                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="8" value="9"/>
+                    <GameCell GridPane.columnIndex="0" GridPane.rowIndex="8" value="0"/>
+                    <GameCell GridPane.columnIndex="1" GridPane.rowIndex="8" value="0"/>
+                    <GameCell GridPane.columnIndex="2" GridPane.rowIndex="8" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="3" GridPane.rowIndex="8" value="0"/>
+                    <GameCell GridPane.columnIndex="4" GridPane.rowIndex="8" value="0"/>
+                    <GameCell GridPane.columnIndex="5" GridPane.rowIndex="8" value="0" styleClass="borderRight"/>
+                    <GameCell GridPane.columnIndex="6" GridPane.rowIndex="8" value="0"/>
+                    <GameCell GridPane.columnIndex="7" GridPane.rowIndex="8" value="0"/>
+                    <GameCell GridPane.columnIndex="8" GridPane.rowIndex="8" value="0"/>
 
                 </GridPane>
                 <BorderedTitledPane title="Controls" id="controlPanel">
@@ -108,4 +109,7 @@
                 </BorderedTitledPane>
             </HBox>
     </BorderedTitledPane>
+    <stylesheets>
+        <URL value="@main.css"/>
+    </stylesheets>
 </StackPane>
