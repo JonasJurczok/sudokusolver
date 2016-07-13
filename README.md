@@ -9,6 +9,20 @@ This program is intended as a coding practice.. also I always wanted to test ran
 
 I'm currently working on the UI to present the Sudoku and allow the user to select a strategy and observe the solving of the puzzle.
 
+## Try yourself
+
+To run the application clone the repository. Then execute
+
+````
+mvn clean verify
+````
+
+followed by
+
+````
+java -jar target\Sudokusolver.jar-jar-with-dependencies.jar
+````
+
 ## License
 
 Copyright (c) 2016 Jonas Jurczok
